@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Prova -AC2</h1>
+    <ol>
+        <li>Crie uma página com campo texto e um botão "Adivinhe". A cada clique, o número informado pelo usuário
+            é comparado com um valor randômico gerado no carregar a página. Mostre em um <p> se o usuário acertou
+            ou se o número é maior ou menor que o número sorteado. 
+            </li>
+            <label for="campo">Digite um numero entre 0 e 9:</label>
+            <input type="number" id="campo">
+            <button onclick="valorRandomico()">Adivinhe</button>
+            <br>
+        <li>Crie um input text em que, conforme o usuário digita, o conteúdo digitado é transformado em caixa alta. </li>
+        <label for="caixaAlta">Transforme seu texto em caixa alta:</label>
+        <input type="text" id="caixaAlta">
+        <button onclick="caixaAlta()">Transforme:</button>
+        <br>
+        <li>Crie um campo de texto com um botão "Adicionar". Sempre que o usuário digitar algo e clicar no botão, o
+        item é adicionado a uma lista de tarefas abaixo. Adicione, para cada tarefa, um checkbox para o usuário
+        marcar como concluída e, ao fazer isso, o texto fica riscado e em vermelho. 
+        </li>
+        <label for="texto">Adicione itens a lista:</label>
+        <input type="text" id="novaTarefa">
+        <button onclick="Lista()">Adicione:</button>
+        <ul id="listaTarefas"></ul>
+
+        <li>
+            Crie uma página onde o usuário pode escolher entre 3 personagens usando radio buttons:
+ Mago
+ Guerreiro
+ Arqueiro
+Ao clicar em um botão "Confirmar Escolha", o sistema deve exibir abaixo uma mensagem personalizada e uma
+figura do personagem, como:
+ "Você escolheu ser um Mago! Prepare-se para lançar feitiços!"
+ "Você escolheu ser um Guerreiro! Prepare-se para batalhas épicas!"
+ "Você escolheu ser um Arqueiro! Prepare-se para acertar alvos distantes!" 
+        </li>
+        <label>
+            <input type="radio" name="personagem" value="Mago"> Mago
+        </label><br>
+        
+        <label>
+            <input type="radio" name="personagem" value="Guerreiro"> Guerreiro
+        </label><br>
+    
+        <label>
+            <input type="radio" name="personagem" value="Arqueiro"> Arqueiro
+        </label><br><br>
+    
+        <button onclick="confirmarEscolha()">Confirmar Escolha</button>
+    
+        <h3>Mensagem:</h3>
+        <p id="mensagem"></p>
+    
+        <div id="imagemPersonagem"></div>
+    
+    </ol>
+    <script src="script.js"></script>
+</body>
+</html>
