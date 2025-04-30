@@ -19,8 +19,7 @@
             <br>
         <li>Crie um input text em que, conforme o usuário digita, o conteúdo digitado é transformado em caixa alta. </li>
         <label for="caixaAlta">Transforme seu texto em caixa alta:</label>
-        <input type="text" id="caixaAlta">
-        <button onclick="caixaAlta()">Transforme:</button>
+        <input onkeyup="caixaAlta()" type="text" id="caixaAlta">
         <br>
         <li>Crie um campo de texto com um botão "Adicionar". Sempre que o usuário digitar algo e clicar no botão, o
         item é adicionado a uma lista de tarefas abaixo. Adicione, para cada tarefa, um checkbox para o usuário
